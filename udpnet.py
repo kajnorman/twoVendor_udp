@@ -6,7 +6,7 @@ import time
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
 wlan.connect('ITEK 2nd','2nd_Semester_E24a')
-#wlan.connect('Waoo4920_S3N3','pcty7937')
+
 
 while not wlan.isconnected() and wlan.status() >= 0:
     print("Waiting to connect:")
